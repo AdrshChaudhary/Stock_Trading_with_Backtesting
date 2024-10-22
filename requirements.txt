@@ -1,0 +1,12 @@
+dash
+dash-bootstrap-components
+dash-core-components
+dash-html-components
+flask-caching
+numpy
+pandas
+plotly
+talib
+yfinance
+alpaca-trade-api
+vectorbt
