@@ -28,9 +28,6 @@ import numpy as np
 import pandas as pd
 import time
 from settings import (APCA_API_KEY_ID, APCA_API_SECRET, BASE_URL)
-from dotenv import load_dotenv
-
-load_dotenv()
 
 api = tradeapi.REST(APCA_API_KEY_ID, APCA_API_SECRET, BASE_URL, api_version='v2')
 last_trade_time = None

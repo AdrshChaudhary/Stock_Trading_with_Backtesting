@@ -1,13 +1,12 @@
 import os
 import talib
-from dotenv import load_dotenv
 import pandas as pd
 from vectorbt.portfolio.enums import Direction, DirectionConflictMode
 from vectorbt import settings
-load_dotenv()
-APCA_API_KEY_ID = os.getenv('APCA_API_KEY_ID')
-APCA_API_SECRET = os.getenv('APCA_API_SECRET')
-BASE_URL = os.getenv('BASE_URL')
+
+APCA_API_KEY_ID = "PKVQA6W5332B7EODVYF7"
+APCA_API_SECRET = "lncXdYSbdfpffyP2zokRCI4l1qml9NZTZzuSSF1G"
+BASE_URL = "https://paper-api.alpaca.markets"
 periods = ['1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max']
 intervals = ['1m', '2m', '5m', '15m', '30m', '60m', '90m', '1d', '5d', '1wk', '1mo', '3mo']
 patterns = talib.get_function_groups()['Pattern Recognition']
