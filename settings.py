@@ -138,7 +138,7 @@ default_plot_type = 'OHLC'
 # Settings Configuration
 APP_SETTINGS = {
     "USE_CACHING": os.environ.get("USE_CACHING", "True") == "True",
-    "HOST": os.environ.get("HOST", "127.0.0.1"),
-    "PORT": int(os.environ.get("PORT", 8051)),
+    "HOST": os.environ.get("HOST", "0.0.0.0"),
+    "PORT": int(os.environ.get("PORT", 8050)),
     "DEBUG": os.environ.get("DEBUG", "True") == "True",
 }
