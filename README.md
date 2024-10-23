@@ -15,19 +15,32 @@ You can access the live application [here](https://stock-trading-with-backtestin
 ## Installation
 To set up the project locally, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/AdrshChaudhary/Stock_Trading_with_Backtesting.git
    cd Stock_Trading_with_Backtesting
 
-2. Install the necessary dependencies:
+2. **Install the necessary dependencies:**
    ```bash
    pip install -r requirements.txt
    
-3. Configure your settings:
+3. **Configure your settings:**
    Modify the .env file to set your API keys and other parameters.
    
-5. Run the application:
+5. **Run the application:**
    ```bash
-   python main.py
+    python main.py
+
+## Docker Setup
+To run the application using Docker, follow these steps:
+
+1. **Build the Docker image**:
+   ```bash
+   docker build -t stock-trading-backtesting .
+
+2. **Run the Docker container:**:
+   ```bash
+   docker run -p 5000:5000 stock-trading-backtesting
+
+3. **Access the application at http://localhost:5000 in your web browser.**
 
